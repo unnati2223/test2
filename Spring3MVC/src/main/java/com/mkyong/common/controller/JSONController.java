@@ -14,7 +14,6 @@ public class JSONController {
 	@RequestMapping(value = "{name}", method = RequestMethod.GET)
 	public @ResponseBody
 	Shop getShopInJSON(@PathVariable String name) {
-		System.out.println("I made change");
 		Shop shop = new Shop();
 		shop.setName(name);
 		shop.setStaffName(new String[] { "mkyong1", "mkyong2" });
@@ -24,3 +23,4 @@ public class JSONController {
 	}
 
 }
+
